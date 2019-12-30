@@ -1,12 +1,12 @@
 `<p align="center">
-  <a href="http://www.sinotechgenomics.com">
-    <img height="70" src="http://www.sinotechgenomics.com/Upload/0/WebsiteLogo/WebsiteLogo_20170620092534731.png">
-  </a>
-  <h1 align="center">BreakID</h1>
+
+  <h1 align="center">MSIDetector</h1>
 </p>
 
 
-MSIDetector: Detection of Microsatellite Instability Status from Targeted Sequencing Data without Matched Normal
+MSIDetector: Detection of Microsatellite Instability Status from Targeted Sequencing Data
+
+
 Prerequisites for MSIDetector
 ----------------
 cmake version above 2.8.2
@@ -24,7 +24,13 @@ Running MSIDetector
 --------------------------
 MSIDetector needs a sorted, indexed and duplicate marked tumor bam file, a MSI loci file and pre-build reference baseline file. The output is in plain txt format.
 
-`bin/MSIDetector -i input_bam -o out_prefix  -l /path/to/MSI_Loci_File -ref /path/to/reference_baseline_file`
+`bin/MSIDetector -i input_bam -o out_prefix  -l /path/to/MS_Loci_File -ref /path/to/reference_baseline_file`
+
+Example MS loci file :
+https://github.com/SinOncology/MSIDetector/blob/master/baseline_data/msi_loci.bed
+
+Example reference baseline file
+https://github.com/SinOncology/MSIDetector/blob/master/baseline_data/msi_loci_baseline.txt
 
 
 Citation
