@@ -924,10 +924,10 @@ void writeDiffStats(string diff_stats_file, map<string, sample_loci_model_data> 
   }
   
   out
-    << "#Judge Criterion: \n#  Unstable Rate is in [0,0.2): MSI-Stable\n#  Unstable Rate is in [0.2,0.4): MSI-Low\n#  Unstable Rate is in [0.4,1]: MSI-High\n";
+    << "#Judge Criteria: \n#  Unstable Rate is in [0,0.2): MSI-Stable\n#  Unstable Rate is in [0.2,0.4): MSI-Low\n#  Unstable Rate is in [0.4,1]: MSI-High\n";
   out << "#Note: The -1 in \"sampleMinusLog10Pvalue\" column means infinite value.\n";
   out << "#Conclusion:\n#  Unstable loci count is: " << unstable_count << ", Total Loci Count is: " << sum
-      << "\n#  The unstable rate is: " << unstable_rate << "\n#  The sample MSI feature is: " << tmp_str
+      << "\n#  The unstable rate is: " << unstable_rate << "\n#  The sample MSI status is: " << tmp_str
       << std::endl;
   
   out.close();
