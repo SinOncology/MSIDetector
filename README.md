@@ -71,7 +71,7 @@ Citation
 
 Jin et al.
 [Detection of Microsatellite Instability Status from Targeted Sequencing Data.]
-Bioinformatics, 2019 submitted.
+BMC Bioinformatics, 2020 submitted.
 
 
 License
